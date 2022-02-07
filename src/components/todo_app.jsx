@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 
 const TodoApp = () => {
-  // const [forms, setForms] = useState([<TodoForm key={0} />])
   const [todos, setTodos] = useState([])
 
   const [todo, setTodo] = useState({
@@ -31,11 +30,6 @@ const TodoApp = () => {
       setTodos([...todos.slice(0, i), {title: todos[i].title, description: todos[i].description, complete: !todos[i].complete}, ...todos.slice(i + 1)])
     }
   }
-
-  // const addForm = () => {
-  //   setForms([...forms, <TodoForm key={forms.length} />])
-  // }  
-  console.log(todos)
   
   return (
     <div id='todo-app'>
@@ -58,7 +52,6 @@ const TodoApp = () => {
             <input type="submit" />
           </form>
         </div>
-        {/* <button onClick={e => addForm()}>Add another form</button> */}
       </div>
       <div id="index-container">
         <ul id='todo-list'>
