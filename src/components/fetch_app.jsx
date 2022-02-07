@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const CatApp = props => {
+const FetchApp = props => {
   const [fact, setFact] = useState('')
   
   const getRandomFact = async () => {
@@ -18,4 +18,4 @@ const CatApp = props => {
 
 }
 
-export default CatApp
+export default FetchApp

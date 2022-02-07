@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import TodoApp from './components/todo_app';
-import CatApp from './components/fetch_cat_app';
+import FetchApp from './components/fetch_app';
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <TodoApp />
       <br />
-      <CatApp />
+      <FetchApp />
     </div>
   );
 }
